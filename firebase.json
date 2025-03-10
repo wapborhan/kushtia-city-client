@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "kushtiabd",
+    "site": "kushtiacity",
     "public": "dist",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "rewrites": [
