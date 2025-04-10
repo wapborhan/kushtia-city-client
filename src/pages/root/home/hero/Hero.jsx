@@ -1,8 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
-import "swiper/css";
-import "swiper/css/effect-fade";
+
 import { Link } from "react-router-dom";
 
 const Hero = () => {
@@ -21,7 +20,7 @@ const Hero = () => {
                 className="hero-inner"
                 data-bg-src="assets/img/hero/hero_bg_5_1.jpg"
                 style={{
-                  background: "url(/images/hero/hero_bg_5_1.jpg)",
+                  background: "url(assets/img/hero/hero_bg_5_1.jpg)",
                   // position: "relative",
                   // backgroundSize: "cover",
                 }}
@@ -97,7 +96,7 @@ const Hero = () => {
               <div
                 className="hero-inner"
                 data-bg-src="assets/img/hero/hero_bg_5_2.jpg"
-                style={{ background: "url(images/hero/hero_bg_5_2.jpg)" }}
+                style={{ background: "url(assets/img/hero/hero_bg_5_2.jpg)" }}
               >
                 <div className="container">
                   <div className="hero-style5">
@@ -164,7 +163,7 @@ const Hero = () => {
               <div
                 className="hero-inner"
                 data-bg-src="assets/img/hero/hero_bg_5_3.jpg"
-                style={{ background: "url(images/hero/hero_bg_5_3.jpg)" }}
+                style={{ background: "url(assets/img/hero/hero_bg_5_3.jpg)" }}
               >
                 <div className="container">
                   <div className="hero-style5">

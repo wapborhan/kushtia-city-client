@@ -8,6 +8,8 @@ const Clients = () => {
           className="swiper th-slider"
           id="brandSlider2"
           spaceBetween={30}
+          loop
+          autoplay
           breakpoints={{
             0: { slidesPerView: 1 },
             576: { slidesPerView: 2 },
@@ -21,72 +23,72 @@ const Clients = () => {
           <div className="swiper-wrapper">
             <SwiperSlide className="swiper-slide">
               <div className="brand-card">
-                <img src="images/brand/brand_3_1.svg" alt="Brand Logo" />
+                <img src="assets/img/brand/brand_3_1.svg" alt="Brand Logo" />
               </div>
             </SwiperSlide>
             <SwiperSlide className="swiper-slide">
               <div className="brand-card">
-                <img src="images/brand/brand_3_2.svg" alt="Brand Logo" />
+                <img src="assets/img/brand/brand_3_2.svg" alt="Brand Logo" />
               </div>
             </SwiperSlide>
             <SwiperSlide className="swiper-slide">
               <div className="brand-card">
-                <img src="images/brand/brand_3_3.svg" alt="Brand Logo" />
+                <img src="assets/img/brand/brand_3_3.svg" alt="Brand Logo" />
               </div>
             </SwiperSlide>
             <SwiperSlide className="swiper-slide">
               <div className="brand-card">
-                <img src="images/brand/brand_3_4.svg" alt="Brand Logo" />
+                <img src="assets/img/brand/brand_3_4.svg" alt="Brand Logo" />
               </div>
             </SwiperSlide>
             <SwiperSlide className="swiper-slide">
               <div className="brand-card">
-                <img src="images/brand/brand_3_5.svg" alt="Brand Logo" />
+                <img src="assets/img/brand/brand_3_5.svg" alt="Brand Logo" />
               </div>
             </SwiperSlide>
             <SwiperSlide className="swiper-slide">
               <div className="brand-card">
-                <img src="images/brand/brand_3_6.svg" alt="Brand Logo" />
+                <img src="assets/img/brand/brand_3_6.svg" alt="Brand Logo" />
               </div>
             </SwiperSlide>
             <SwiperSlide className="swiper-slide">
               <div className="brand-card">
-                <img src="images/brand/brand_3_7.svg" alt="Brand Logo" />
+                <img src="assets/img/brand/brand_3_7.svg" alt="Brand Logo" />
               </div>
             </SwiperSlide>
             <SwiperSlide className="swiper-slide">
               <div className="brand-card">
-                <img src="images/brand/brand_3_1.svg" alt="Brand Logo" />
+                <img src="assets/img/brand/brand_3_1.svg" alt="Brand Logo" />
               </div>
             </SwiperSlide>
             <SwiperSlide className="swiper-slide">
               <div className="brand-card">
-                <img src="images/brand/brand_3_2.svg" alt="Brand Logo" />
+                <img src="assets/img/brand/brand_3_2.svg" alt="Brand Logo" />
               </div>
             </SwiperSlide>
             <SwiperSlide className="swiper-slide">
               <div className="brand-card">
-                <img src="images/brand/brand_3_3.svg" alt="Brand Logo" />
+                <img src="assets/img/brand/brand_3_3.svg" alt="Brand Logo" />
               </div>
             </SwiperSlide>
             <SwiperSlide className="swiper-slide">
               <div className="brand-card">
-                <img src="images/brand/brand_3_4.svg" alt="Brand Logo" />
+                <img src="assets/img/brand/brand_3_4.svg" alt="Brand Logo" />
               </div>
             </SwiperSlide>
             <SwiperSlide className="swiper-slide">
               <div className="brand-card">
-                <img src="images/brand/brand_3_5.svg" alt="Brand Logo" />
+                <img src="assets/img/brand/brand_3_5.svg" alt="Brand Logo" />
               </div>
             </SwiperSlide>
             <SwiperSlide className="swiper-slide">
               <div className="brand-card">
-                <img src="images/brand/brand_3_6.svg" alt="Brand Logo" />
+                <img src="assets/img/brand/brand_3_6.svg" alt="Brand Logo" />
               </div>
             </SwiperSlide>
             <SwiperSlide className="swiper-slide">
               <div className="brand-card">
-                <img src="images/brand/brand_3_7.svg" alt="Brand Logo" />
+                <img src="assets/img/brand/brand_3_7.svg" alt="Brand Logo" />
               </div>
             </SwiperSlide>
           </div>

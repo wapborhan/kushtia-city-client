@@ -12,7 +12,7 @@ const Header = () => {
                 <div className="header-logo">
                   <a href="home-handyman.html">
                     <img
-                      src="images/logo-tertiary.png"
+                      src="assets/img/logo-tertiary.png"
                       style={{ width: "250px" }}
                       alt="KushtiaBD"
                     />

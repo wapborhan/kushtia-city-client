@@ -8,11 +8,11 @@ const About = () => {
           <div className="col-xl-6 mb-35 mb-xl-0">
             <div className="img-box5">
               <div className="img1">
-                <img src="images/normal/about_5.png" alt="About" />
+                <img src="assets/img/normal/about_5.png" alt="About" />
               </div>
               <div className="customer-box">
                 <div className="box-img">
-                  <img src="images/normal/avaters.png" alt="About" />
+                  <img src="assets/img/normal/avaters.png" alt="About" />
                 </div>
                 <div className="media-body" title="আদমশুমারী ও গৃহগণনা ২০১১">
                   <h4 className="box-title">
@@ -27,7 +27,7 @@ const About = () => {
             <div className="pe-xxl-5">
               <div className="title-area mb-37">
                 <span className="sub-title2">
-                  <img src="images/theme-img/title_icon5.svg" alt="shape" />
+                  <img src="assets/img/theme-img/title_icon5.svg" alt="shape" />
                   এক নজরে
                 </span>
                 <h2 className="sec-title mb-5">কুষ্টিয়া জেলা সম্পর্কে</h2>
@@ -72,10 +72,13 @@ const About = () => {
                 </div>
               </div> */}
               <div className="btn-group justify-content-center mt-4">
-                <Link to="/" className="th-btn style4 rounded-10">
+                <Link to="/about" className="th-btn style4 rounded-10">
                   আরো জানুন<i className="far fa-arrow-right ms-2"></i>
                 </Link>
-                <Link to="/" className="call-btn">
+                <Link
+                  to="http://www.facebook.com/groups/kushtiacityz/"
+                  className="call-btn"
+                >
                   <div className="play-btn">
                     <i className="fab fa-facebook-f"></i>
                   </div>

@@ -30,7 +30,7 @@ const Footer = () => {
       <footer
         className="footer-wrapper footer-layout5"
         data-bg-src="images/bg/footer_bg_5.png"
-        style={{ backgroundImage: "url(images/bg/footer_bg_5.png)" }}
+        style={{ backgroundImage: "url(assets/img/bg/footer_bg_5.png)" }}
       >
         <div className="widget-area">
           <div className="container">
@@ -40,7 +40,7 @@ const Footer = () => {
                   <div className="th-widget-about">
                     <div className="about-logo">
                       <a href="home-handyman.html">
-                        <img src="images/logo-tertiary.svg" alt="Rakar" />
+                        <img src="assets/img/logo.png" alt="Kushtia City" />
                       </a>
                     </div>
                     <p className="about-text">
@@ -68,7 +68,7 @@ const Footer = () => {
               <div className="col-md-6 col-xl-auto">
                 <div className="widget widget_nav_menu footer-widget">
                   <h3 className="widget_title">
-                    <img src="images/icon/footer_title5.svg" alt="icon" />
+                    <img src="assets/img/icon/footer_title5.svg" alt="icon" />
                     Useful Links
                   </h3>
                   <div className="menu-all-pages-container">
@@ -98,8 +98,8 @@ const Footer = () => {
               <div className="col-md-6 col-xl-auto">
                 <div className="widget widget_nav_menu footer-widget">
                   <h3 className="widget_title">
-                    <img src="images/icon/footer_title5.svg" alt="icon" /> Our
-                    Services
+                    <img src="assets/img/icon/footer_title5.svg" alt="icon" />{" "}
+                    Our Services
                   </h3>
                   <div className="menu-all-pages-container">
                     <ul className="menu">
@@ -128,7 +128,7 @@ const Footer = () => {
               <div className="col-md-6 col-xl-auto">
                 <div className="widget newsletter-widget footer-widget">
                   <h3 className="widget_title">
-                    <img src="images/icon/footer_title5.svg" alt="icon" />
+                    <img src="assets/img/icon/footer_title5.svg" alt="icon" />
                     Newsletter
                   </h3>
                   <p className="footer-text">Get latest updates and offers.</p>
@@ -168,7 +168,12 @@ const Footer = () => {
           </div>
         </div>
       </footer>{" "}
-      <div className={`scroll-top ${isVisible ? "show" : ""}`}>
+      <div
+        className={`scroll-top ${isVisible ? "show" : ""}`}
+        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        aria-label="Scroll to top"
+        title="Scroll to top"
+      >
         <svg
           className="progress-circle svg-content"
           width="100%"
