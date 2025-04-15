@@ -21,7 +21,7 @@ const SignUp = () => {
       // console.log(loggedUser);
       updateUserProfile(
         formData.username,
-        "https://raw.githubusercontent.com/wapborhan/kushtiabd-client/refs/heads/main/public/images/avatar.png",
+        "https://raw.githubusercontent.com/wapborhan/kushtiabd-client/refs/heads/main/public/images/avatar.png"
       )
         .then(() => {
           const userInfo = {
@@ -46,20 +46,145 @@ const SignUp = () => {
 
   return (
     <div
-      className="flex items-center min-h-screen p-4 bg-gray-100 lg:justify-center"
       style={{
         backgroundImage: `url(/images/bg.png)`,
       }}
     >
+      <div
+        className="contact-sec5 space"
+        data-bg-src="assets/img/bg/contact_bg_5.png"
+        style={{
+          backgroundImage: "url(assets/img/bg/contact_bg_7.png)",
+        }}
+      >
+        <div className="container">
+          <div className="row">
+            <div className="col-xl-6 offset-xl-1 text-center text-xl-start">
+              <div className="title-area">
+                <span className="sub-title2">
+                  <img
+                    src="assets/img/theme-img/title_icon5_white.svg"
+                    alt="shape"
+                  />
+                  কোন অ্যাকাউন্ট নেই?{" "}
+                  <Link
+                    to="/signin"
+                    className="underline"
+                    style={{ color: "#fff" }}
+                  >
+                    শুরু করুন!
+                  </Link>
+                </span>{" "}
+              </div>
+              <form
+                onSubmit={handleSubmit(onSubmit)}
+                className="input-transparent ajax-contact"
+              >
+                <div className="row">
+                  <div className="form-group col-md-12">
+                    <label className="text-sm font-semibold ">ইমেল</label>
+                    <input
+                      type="email"
+                      name="email"
+                      autoFocus
+                      defaultValue="borhanuddin979@gmail.com"
+                      className="form-control"
+                      placeholder="ইমেল"
+                    />
+                  </div>
+                  <div className="form-group col-md-12">
+                    <label className="text-sm font-semibold ">ইমেল</label>
+                    <input
+                      type="email"
+                      name="email"
+                      autoFocus
+                      defaultValue="borhanuddin979@gmail.com"
+                      className="form-control"
+                      placeholder="ইমেল"
+                    />
+                  </div>
+                  <div className="form-group col-md-12">
+                    <div
+                      className="flex items-center justify-between"
+                      style={{
+                        width: "100%",
+                        display: "flex",
+                        justifyContent: "space-between",
+                      }}
+                    >
+                      <label
+                        htmlFor="password"
+                        className="text-sm font-semibold text-gray-500"
+                      >
+                        পাসওয়ার্ড
+                      </label>
+                      <a
+                        href="#"
+                        className="text-sm text-primary hover:underline focus:text-secondary"
+                      >
+                        পাসওয়ার্ড ভুলে গেছেন?
+                      </a>
+                    </div>
+                    <input
+                      type="password"
+                      name="password"
+                      placeholder="Password"
+                      className="form-control"
+                      defaultValue="Abc@123"
+                    />
+                  </div>
+                  <div className="form-btn col-12">
+                    <button
+                      className="th-btn style3 rounded-10 w-100"
+                      type="submit"
+                      value="Login"
+                      // onClick={() => setLoading(true)}
+                    >
+                      {/* {loading ? (
+                        <>
+                          লগইন হচ্ছে
+                          <TbLoader3 className="text-[1.8rem] animate-spin  ms-2" />
+                        </>
+                      ) : (
+                        <>
+                          লগইন <i className="far fa-arrow-right ms-2"></i>
+                        </>
+                      )} */}
+                    </button>
+                    <div
+                      className="flex flex-col space-y-5"
+                      style={{
+                        width: "100%",
+                        display: "flex",
+                        flexDirection: "column",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        gap: "1rem",
+                        marginTop: "1rem",
+                        color: "#fff",
+                      }}
+                    >
+                      অথবা লগইন করুন
+                      <div
+                        className="flex flex-col space-y-4"
+                        style={{ width: "100%" }}
+                      >
+                        <SocialSignIn />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
       <div className="flex flex-col overflow-hidden bg-white rounded-md shadow-lg max md:flex-row md:flex-1 lg:max-w-screen-md">
         <div className="p-5 bg-white md:flex-1">
           <h3 className="my-4 text-2xl font-semibold text-gray-700">
             Create Account
           </h3>
-          <form
-            onSubmit={handleSubmit(onSubmit)}
-            className="flex flex-col space-y-5"
-          >
+          <form className="flex flex-col space-y-5">
             <div className="flex flex-col space-y-1">
               <label className="text-sm font-semibold text-gray-500">
                 Username
@@ -138,48 +263,7 @@ const SignUp = () => {
                 Sign Up
               </button>
             </div>
-            <div className="flex flex-col space-y-5">
-              <span className="flex items-center justify-center space-x-2">
-                <span className="h-px bg-gray-400 w-14"></span>
-                <span className="font-normal text-gray-500">
-                  or Sign Up with
-                </span>
-                <span className="h-px bg-gray-400 w-14"></span>
-              </span>
-              <div className="flex flex-col space-y-4">
-                <SocialSignIn />
-              </div>
-            </div>
           </form>
-        </div>
-        <div className="p-4 py-6 text-white bg-secondary md:w-80 md:flex-shrink-0 md:flex md:flex-col md:items-center md:justify-evenly">
-          <div className="my-3 text-4xl font-bold tracking-wider text-center">
-            <Link to="/">
-              <img src="https://i.ibb.co/1LV8nQP/logo.png" alt="" />
-            </Link>
-          </div>
-          <p className="mt-6 font-normal text-center text-gray-300 md:mt-0">
-            With the power of K-WD, you can now focus only on functionaries for
-            your digital products, while leaving the UI design on us!
-          </p>
-          <p className="flex flex-col items-center justify-center mt-10 text-center">
-            <span>Do You have an account?</span>
-            <Link to="/signin" className="underline">
-              Log In!
-            </Link>
-          </p>
-          {
-            /* <p className="mt-6 text-sm text-center text-gray-300">
-          Read our
-          <a href="#" className="underline">
-            terms
-          </a>
-          and
-          <a href="#" className="underline">
-            conditions
-          </a>
-        </p> */
-          }
         </div>
       </div>
     </div>

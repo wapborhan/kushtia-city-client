@@ -1,9 +1,10 @@
+import "./SocialSignIn.css";
+
 const SocialSignIn = () => {
   return (
-    <div className="flex items-center justify-center px-4 py-2 space-x-2  duration-300 border border-primary rounded-md group hover:bg-primary focus:outline-none cursor-pointer transition-all">
-      <span>
+    <div className="social-signin d-flex align-items-center justify-content-center px-4 py-2 rounded cursor-pointer">
+      <span className="me-2">
         <svg
-          className="mr-3"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 48 48"
           width="25px"
@@ -26,9 +27,7 @@ const SocialSignIn = () => {
           />
         </svg>
       </span>
-      <span className="text-sm font-medium text-primary group-hover:text-white">
-        Google
-      </span>
+      <span className="text-label">Google</span>
     </div>
   );
 };

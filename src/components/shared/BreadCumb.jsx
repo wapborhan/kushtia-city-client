@@ -6,7 +6,7 @@ const BreadCumb = ({ title }) => {
       className="breadcumb-wrapper"
       data-bg-src="assets/img/bg/breadcumb-bg.jpg"
       style={{
-        backgroundImage: "url(/images/bg/breadcumb-bg.jpg)",
+        backgroundImage: "url(assets/img/bg/breadcumb-bg.jpg)",
       }}
     >
       <div className="container">

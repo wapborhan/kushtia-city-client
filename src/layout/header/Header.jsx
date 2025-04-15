@@ -20,7 +20,11 @@ const Header = () => {
               <div className="col-auto">
                 <div className="header-logo">
                   <Link to="/">
-                    <img src="assets/img/logo.svg" alt="Kushtia City" />
+                    <img
+                      src="assets/img/logo.png"
+                      style={{ width: "170px" }}
+                      alt="Kushtia City"
+                    />
                   </Link>
                 </div>
               </div>

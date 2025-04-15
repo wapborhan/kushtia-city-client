@@ -10,6 +10,17 @@ const Root = () => {
     window.scrollTo(0, 0);
   }, [pathname]);
 
+  console.log("pathname", pathname);
+
+  useEffect(() => {
+    const body = document.querySelector("body");
+    if (pathname === "/") {
+      body.style.backgroundColor = "#fff";
+    } else {
+      body.style.backgroundColor = "#e1e4e5";
+    }
+  }, [pathname]);
+
   return (
     <>
       {pathname === "/" ? "" : <Header />}

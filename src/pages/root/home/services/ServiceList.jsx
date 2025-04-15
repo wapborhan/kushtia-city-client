@@ -14,10 +14,10 @@ const ServiceList = () => {
         spaceBetween={30}
         slidesPerView={4}
         loop={true}
-        autoplay={{
-          delay: 3000,
-          disableOnInteraction: false,
-        }}
+        // autoplay={{
+        //   delay: 3000,
+        //   disableOnInteraction: false,
+        // }}
         pagination={{
           el: ".slider-pagination",
           type: "fraction",
