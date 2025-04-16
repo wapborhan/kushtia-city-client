@@ -30,10 +30,14 @@ const SignIn = () => {
 
   return (
     <div
-      className="contact-sec5 space"
+      className="contact-sec5 spaces"
       data-bg-src="assets/img/bg/contact_bg_5.png"
       style={{
         backgroundImage: "url(assets/img/bg/contact_bg_5.png)",
+        height: "100vh",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
       }}
     >
       <div className="container">
