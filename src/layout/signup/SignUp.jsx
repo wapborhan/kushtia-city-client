@@ -133,28 +133,29 @@ const SignUp = () => {
                       পাসওয়ার্ড
                     </label>
                     {errors.password?.type === "required" && (
-                      <p className="text-red-600">Password is required</p>
+                      <p className="text-red-600">পাসওয়ার্ড আবশ্যক</p>
                     )}
                     {errors.password?.type === "minLength" && (
                       <p className="text-red-600">
-                        Password must be 6 characters
+                        পাসওয়ার্ড কমপক্ষে ৬ অক্ষরের হতে হবে।
                       </p>
                     )}
                     {errors.password?.type === "maxLength" && (
                       <p className="text-red-600">
-                        Password must be less than 12 characters
+                        পাসওয়ার্ড অবশ্যই ১২ অক্ষরের কম হতে হবে
                       </p>
                     )}
                     {errors.password?.type === "pattern" && (
                       <p className="text-red-600">
-                        Password must have one Uppercase one lower case, one
-                        number and one special character (!@#$&*).
+                        পাসওয়ার্ডে অবশ্যই একটি বড় হাতের অক্ষর, একটি ছোট হাতের
+                        অক্ষর, একটি সংখ্যা এবং একটি বিশেষ অক্ষর (!@#$&*) থাকতে
+                        হবে।
                       </p>
                     )}
                   </div>
                   <input
                     type="password"
-                    placeholder="Password"
+                    placeholder="পাসওয়ার্ড"
                     className="form-control"
                     // defaultValue="Abc@123"
                     name="password"

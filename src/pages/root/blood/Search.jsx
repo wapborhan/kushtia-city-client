@@ -47,15 +47,31 @@ const Search = () => {
 
   return (
     <>
-      <div className="president border-2 border-primary">
-        <div className="bg-primary p-2">
-          <h2 className="ml-6 text-2xl text-white font-bold">রক্তদাতা খুজুন</h2>
+      <section className="overflow-hidden space" id="service-sec">
+        <div className="shape-mockup spin" data-top="0%" data-right="0%">
+          <img src="assets/img/shape/lines_1.png" alt="shape" />
         </div>
-        <div className="about space-y-4 p-4">
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-xl-8 col-md-10">
+              <div className="title-area text-center">
+                <span className="sub-title">
+                  <img src="assets/img/theme-img/title_icon.svg" alt="Icon" />
+                  রক্তদাতা খুজুন
+                </span>
+                <h2 className="sec-title">দুঃসময়ের জন্য রক্ত সঞ্চয় করুন</h2>
+                <p className="sec-text">
+                  সম্মানিত স্বেচ্ছা রক্তদাতা, আপনাকে অভিনন্দন। আপনার জন্যেই এটা
+                  সম্ভব হয়েছে। ২০০০ সালে আমাদের দেশে প্রয়োজনীয় রক্তের ৪৭%-ই আসত
+                  পেশাদার রক্তদাতাদের কাছ থেকে। ২০১১ সালে তা কমে আসে ২০-২৫% এ।
+                </p>
+              </div>
+            </div>
+          </div>
           <div className="donar">
             <form onSubmit={onSubmitData}>
-              <div className="grid grid-cols-5 gap-5">
-                <div className="division">
+              <div className="row grid-cols-5 gap-5">
+                <div className="division col-2">
                   <Select
                     name="Division"
                     disableCon={true}
@@ -63,7 +79,7 @@ const Search = () => {
                     data={divisions}
                   />
                 </div>
-                <div className="district">
+                <div className="district col-2">
                   <Select
                     name="District"
                     setData={setDistrict}
@@ -71,7 +87,7 @@ const Search = () => {
                     data={filteredDistricts}
                   />
                 </div>
-                <div className="upozila">
+                <div className="upozila col-2">
                   <Select
                     name="Upozila"
                     setData={setUpazila}
@@ -79,7 +95,7 @@ const Search = () => {
                     data={filteredUpazila}
                   />
                 </div>
-                <div className="group">
+                <div className="group col-2">
                   <Select
                     name="Blood Group"
                     setData={setBloodGroup}
@@ -90,8 +106,8 @@ const Search = () => {
                     ]}
                   />
                 </div>
-                <div className="button">
-                  <button className="bg-primary p-2 w-full" type="submit">
+                <div className="button col-2">
+                  <button className=" p-2 w-full" type="submit">
                     Search
                   </button>
                 </div>
@@ -100,7 +116,7 @@ const Search = () => {
             <DonarList />
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };

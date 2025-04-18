@@ -2,7 +2,6 @@ import BreadCumb from "../../../components/shared/BreadCumb";
 import About from "./About";
 import Hero from "./Hero";
 import Search from "./Search";
-import StockReport from "./StockReport";
 
 const Blood = () => {
   return (
@@ -10,7 +9,6 @@ const Blood = () => {
       <BreadCumb title="রক্ত" />
       <Hero />
       <About />
-      <StockReport />
       <Search />
     </div>
   );

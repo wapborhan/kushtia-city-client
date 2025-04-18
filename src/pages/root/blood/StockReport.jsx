@@ -12,25 +12,19 @@ const StockReport = () => {
 
   return (
     <div>
-      <div className="president border-2 border-primary">
-        <div className="bg-primary p-2">
-          <h2 className="ml-6 text-2xl text-white font-bold">
-            এখন রক্তের ডোনার সংখ্যাঃ ১৩০ জন
-          </h2>
-        </div>
+      <div className="donar">
         <div className="about space-y-4 p-4">
           <div className="box">
-            <h1 className="text-xl">গ্রুপ অনুযায়ী</h1>
-            <div className="d-flex grid-cols-4 p-3 justify-center items-center">
+            <h1 className="text-xl"> এখন রক্তের ডোনার সংখ্যাঃ ১৩০ জন</h1>
+            <h5 className="text-xl border-bottom">গ্রুপ অনুযায়ী</h5>
+            <div className="row p-3 justify-center items-center">
               {cardData.map(({ groupName, id }) => {
                 return (
                   <div
-                    className="group flex gap-3 justify-center items-center p-2 border-2"
+                    className="col-3 group flex gap-3 justify-center items-center p-2 border"
                     key={id}
                   >
-                    <div className="name text-primary font-bold">
-                      {groupName}
-                    </div>
+                    <div className="name  font-bold">{groupName}</div>
                     <div className="stock ">19</div>
                   </div>
                 );

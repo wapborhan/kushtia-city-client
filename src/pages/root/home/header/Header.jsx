@@ -1,4 +1,22 @@
+import { NavLink } from "react-router-dom";
 import TopBar from "./TopBar";
+const navData = [
+  {
+    id: 1,
+    name: "রক্ত ডোনার",
+    link: "/blood",
+  },
+  {
+    id: 2,
+    name: "সার্ভিস সমূহ",
+    link: "/services",
+  },
+  {
+    id: 3,
+    name: "প্রশ্ন উত্তর",
+    link: "/quest-ans",
+  },
+];
 
 const Header = () => {
   return (
@@ -31,15 +49,16 @@ const Header = () => {
                   </div>
                   <nav className="main-menu d-none d-lg-inline-block">
                     <ul>
-                      <li>
-                        <a href="home-handyman.html">Home</a>
-                      </li>
-                      <li>
-                        <a href="about.html">About Us</a>
-                      </li>
-                      <li>
-                        <a href="#">Our Services</a>
-                      </li>
+                      {navData.map(({ id, link, name }) => {
+                        return (
+                          <li key={id}>
+                            <NavLink to={link} href="home-office-repair.html">
+                              {name}
+                            </NavLink>
+                          </li>
+                        );
+                      })}
+
                       <li className="menu-item-has-children">
                         <a href="#">Pages</a>
                         <ul className="sub-menu">

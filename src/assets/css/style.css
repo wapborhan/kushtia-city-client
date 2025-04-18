@@ -14561,7 +14561,7 @@ span.select2-selection.select2-selection--single:focus {
 
 .team-element .whatsapp {
   position: absolute;
-  bottom: -28px;
+  top: -28px;
   left: calc(50% - 28px);
   border: 2px solid var(--white-color);
   background-color: var(--theme-color);
@@ -14569,9 +14569,9 @@ span.select2-selection.select2-selection--single:focus {
   line-height: 52px;
 }
 
-.team-element .whatsapp:hover {
+/* .team-element .whatsapp:hover {
   background-color: var(--title-color);
-}
+} */
 
 .team-element .box-img {
   border-radius: 24px;
@@ -14588,7 +14588,7 @@ span.select2-selection.select2-selection--single:focus {
 }
 
 .team-element .box-content {
-  padding: 24px 12px 53px;
+  padding: 45px 15px 25px;
   position: absolute;
   bottom: 0;
   left: 22px;

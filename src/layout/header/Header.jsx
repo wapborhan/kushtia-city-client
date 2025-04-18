@@ -1,6 +1,5 @@
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { navData } from "./headData";
-import { FiUser, FiShoppingBag } from "react-icons/fi";
 import useAuth from "../../hooks/useAuth";
 import TopBar from "../../pages/root/home/header/TopBar";
 
@@ -10,6 +9,9 @@ const Header = () => {
   const signOut = () => {
     logOut();
   };
+
+  console.log(navData);
+
   return (
     <header className="th-header header-layout1">
       <TopBar />
