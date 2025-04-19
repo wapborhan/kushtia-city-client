@@ -13,6 +13,7 @@ import Services from "../pages/root/services/Services";
 import ServicesDetails from "../pages/root/services/details/ServicesDetails";
 import Test from "../pages/test";
 import ErrorElement from "../layout/ErrorElement";
+import CoomingSoon from "../components/CoomingSoon";
 
 const router = createBrowserRouter([
   {
@@ -29,21 +30,34 @@ const router = createBrowserRouter([
         element: <Blood />,
       },
       {
-        path: "/services",
-        element: <Services />,
+        path: "/uddokta",
+        element: <CoomingSoon />,
       },
       {
         path: "/services/details/:id",
         element: <ServicesDetails />,
       },
       {
-        path: "/quest-ans",
-        element: <QuestAns />,
+        path: "/doctor",
+        element: <CoomingSoon />,
       },
       {
-        path: "/answare/:id",
-        element: <Answare />,
+        path: "/hospital",
+        element: <CoomingSoon />,
       },
+      {
+        path: "/diagnostic",
+        element: <CoomingSoon />,
+      },
+      {
+        path: "/fire-services",
+        element: <CoomingSoon />,
+      },
+      {
+        path: "/police-station",
+        element: <CoomingSoon />,
+      },
+
       {
         path: "/about",
         element: <About />,

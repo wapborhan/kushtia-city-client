@@ -6068,17 +6068,18 @@ blockquote cite br {
   text-transform: capitalize;
 }
 
+.main-menu a.active,
 .main-menu a:hover,
 .main-menu > ul > li > a:hover {
   color: var(--theme-color);
 }
 
 .main-menu > ul > li {
-  margin: 0 21px;
+  margin: 0 0px;
 }
 
 .main-menu > ul > li > a {
-  padding: 37px 0;
+  padding: 37px 12px;
 }
 
 .main-menu > ul > li > a:before {
@@ -6091,6 +6092,7 @@ blockquote cite br {
   right: 0;
 }
 
+.main-menu a.active:before,
 .main-menu > ul > li > a:hover:before {
   width: 100%;
   right: unset;
@@ -7096,7 +7098,7 @@ table.variations del {
 }
 
 .header-layout5 .main-menu > ul > li > a {
-  padding: 23px 0;
+  padding: 23px 10px;
 }
 
 .header-layout5 .menu-area {
@@ -14541,7 +14543,8 @@ span.select2-selection.select2-selection--single:focus {
   margin-bottom: 26px;
 }
 
-.team-element .arrow-icon {
+.team-element .arrow-icon,
+.team-element .arrow-icons {
   --btn-size: 60px;
   font-size: 20px;
   position: absolute;
@@ -14551,14 +14554,22 @@ span.select2-selection.select2-selection--single:focus {
   background-color: var(--title-color);
   color: var(--white-color);
 }
+.team-element .arrow-icons {
+  right: 65px;
+  z-index: 3;
+}
 
-.team-element .arrow-icon:hover {
+.team-element .arrow-icon:hover ,.team-element .arrow-icons:hover{
   background-color: var(--theme-color);
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-
+.team-element .arrow-icons:hover{
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
 .team-element .whatsapp {
   position: absolute;
   top: -28px;
@@ -14581,10 +14592,10 @@ span.select2-selection.select2-selection--single:focus {
 }
 
 .team-element .box-img:after {
-  content: url('data:image/svg+xml,<svg width="94" height="90" viewBox="0 0 94 90" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24.3744 30.5588C24.6798 51.3254 41.6014 68 62.3703 68H69.425C82.0064 68 92.3266 77.6809 93.3429 90H93.4258V0H0.425781C13.4742 0.0801305 24.0807 10.5815 24.2728 23.6471L24.3744 30.5588Z" fill="%23E1E4E5"/></svg>');
+  content: url('data:image/svg+xml,<svg width="160" height="90" viewBox="0 0 94 90" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24.3744 30.5588C24.6798 65.9954 41.6014 68 62.3703 68H69.425C82.0064 68 92.3266 77.6809 93.3429 90H93.4258V0H0.425781C13.4742 0.0801305 24.0807 10.5815 24.2728 23.6471L24.3744 30.5588Z" fill="%23E1E4E5"/></svg>');
   position: absolute;
-  right: -1px;
-  top: -1px;
+  right: -2px;
+  top: -2px;
 }
 
 .team-element .box-content {

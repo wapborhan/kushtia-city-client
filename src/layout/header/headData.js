@@ -1,17 +1,38 @@
 export const navData = [
   {
     id: 1,
-    name: "রক্ত ডোনার",
-    link: "/blood",
+    name: "উদ্যোক্তা",
+    link: "/uddokta",
   },
   {
     id: 2,
-    name: "সার্ভিস সমূহ",
-    link: "/services",
+    name: "রক্ত",
+    link: "/blood",
+  },
+
+  {
+    id: 3,
+    name: "ডাক্তার",
+    link: "/doctor",
   },
   {
     id: 3,
-    name: "প্রশ্ন উত্তর",
-    link: "/quest-ans",
+    name: "হাসপাতাল",
+    link: "/hospital",
+  },
+  {
+    id: 3,
+    name: "ডায়াগনস্টিক",
+    link: "/diagnostic",
+  },
+  {
+    id: 3,
+    name: "ফায়ার সার্ভিস",
+    link: "/fire-services",
+  },
+  {
+    id: 3,
+    name: "থানা-পুলিশ",
+    link: "/police-station",
   },
 ];

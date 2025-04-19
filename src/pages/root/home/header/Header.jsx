@@ -1,22 +1,6 @@
 import { NavLink } from "react-router-dom";
 import TopBar from "./TopBar";
-const navData = [
-  {
-    id: 1,
-    name: "রক্ত ডোনার",
-    link: "/blood",
-  },
-  {
-    id: 2,
-    name: "সার্ভিস সমূহ",
-    link: "/services",
-  },
-  {
-    id: 3,
-    name: "প্রশ্ন উত্তর",
-    link: "/quest-ans",
-  },
-];
+import { navData } from "../../../../layout/header/headData";
 
 const Header = () => {
   return (
@@ -49,6 +33,9 @@ const Header = () => {
                   </div>
                   <nav className="main-menu d-none d-lg-inline-block">
                     <ul>
+                      <li>
+                        <NavLink to="/">নীড় পাতা</NavLink>
+                      </li>
                       {navData.map(({ id, link, name }) => {
                         return (
                           <li key={id}>

@@ -33,6 +33,9 @@ const Header = () => {
               <div className="col-auto">
                 <nav className="main-menu d-none d-lg-inline-block">
                   <ul>
+                    <li>
+                      <NavLink to="/">নীড় পাতা</NavLink>
+                    </li>
                     {navData.map(({ id, link, name }) => {
                       return (
                         <li key={id}>
@@ -43,16 +46,7 @@ const Header = () => {
                       );
                     })}
                     <li className="menu-item-has-children">
-                      <a href="home-handyman.html">Home</a>
-                    </li>
-                    <li>
-                      <a href="about.html">About Us</a>
-                    </li>
-                    <li className="menu-item-has-children">
-                      <a href="#">Our Services</a>
-                    </li>
-                    <li className="menu-item-has-children">
-                      <a href="#">Pages</a>
+                      <a href="#">আরও</a>
                       <ul className="sub-menu">
                         <li className="menu-item-has-children">
                           <a href="#">Shop</a>

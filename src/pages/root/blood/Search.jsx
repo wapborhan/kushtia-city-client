@@ -59,7 +59,7 @@ const Search = () => {
                   <img src="assets/img/theme-img/title_icon.svg" alt="Icon" />
                   রক্তদাতা খুজুন
                 </span>
-                <h2 className="sec-title">দুঃসময়ের জন্য রক্ত সঞ্চয় করুন</h2>
+                <h2 className="sec-title">এখন রক্তের ডোনার সংখ্যাঃ ১৩০ জন</h2>
                 <p className="sec-text">
                   সম্মানিত স্বেচ্ছা রক্তদাতা, আপনাকে অভিনন্দন। আপনার জন্যেই এটা
                   সম্ভব হয়েছে। ২০০০ সালে আমাদের দেশে প্রয়োজনীয় রক্তের ৪৭%-ই আসত
@@ -71,27 +71,10 @@ const Search = () => {
           <div className="donar">
             <form onSubmit={onSubmitData}>
               <div className="row grid-cols-5 gap-5">
-                <div className="division col-2">
-                  <Select
-                    name="Division"
-                    disableCon={true}
-                    setData={setDivision}
-                    data={divisions}
-                  />
-                </div>
-                <div className="district col-2">
-                  <Select
-                    name="District"
-                    setData={setDistrict}
-                    disableCon={division}
-                    data={filteredDistricts}
-                  />
-                </div>
                 <div className="upozila col-2">
                   <Select
                     name="Upozila"
                     setData={setUpazila}
-                    disableCon={district}
                     data={filteredUpazila}
                   />
                 </div>
