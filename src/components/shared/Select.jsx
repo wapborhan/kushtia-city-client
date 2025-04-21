@@ -2,7 +2,7 @@ const Select = ({ name, setData, disableCon, data }) => {
   return (
     <select
       name={name}
-      className="p-2 bg-primary rounded-md border-2 w-full"
+      className="p-2 rounded-md border-2 w-full"
       onChange={(e) => {
         const selectedIndex = e.target.selectedIndex;
         const selectedOption = e.target.options[selectedIndex];

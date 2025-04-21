@@ -13914,6 +13914,16 @@ span.select2-selection.select2-selection--single:focus {
   margin-bottom: -0.4em;
   color: var(--theme-color);
 }
+.th-team .read-more {
+  background: var(--white-color);
+  color: var(--theme-color);
+  padding: 8px 16px;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 16px;
+}
 
 .th-team .box-desig,
 .th-team .th-social {
@@ -14543,13 +14553,20 @@ span.select2-selection.select2-selection--single:focus {
   margin-bottom: 26px;
 }
 
+.th-team.team-element .icons {
+position: absolute;
+top: 0;
+right: 0;
+z-index: 3;
+}
+
 .team-element .arrow-icon,
 .team-element .arrow-icons {
   --btn-size: 60px;
   font-size: 20px;
-  position: absolute;
-  top: 0;
-  right: 0;
+  /* position: absolute; */
+  /* top: 0; */
+  /* right: 0; */
   z-index: 3;
   background-color: var(--title-color);
   color: var(--white-color);
@@ -14592,7 +14609,7 @@ span.select2-selection.select2-selection--single:focus {
 }
 
 .team-element .box-img:after {
-  content: url('data:image/svg+xml,<svg width="160" height="90" viewBox="0 0 94 90" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24.3744 30.5588C24.6798 65.9954 41.6014 68 62.3703 68H69.425C82.0064 68 92.3266 77.6809 93.3429 90H93.4258V0H0.425781C13.4742 0.0801305 24.0807 10.5815 24.2728 23.6471L24.3744 30.5588Z" fill="%23E1E4E5"/></svg>');
+  content: url('data:image/svg+xml,<svg width="160" height="90" viewBox="0 0 94 90" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24.3744 30.5588C24.6798 65.9954 41.6014 68 62.3703 68H69.425C82.0064 68 97.3266 77.6809 93.3429 90H93.4258V0H0.425781C13.4742 0.0801305 24.0807 10.5815 24.2728 23.6471L24.3744 30.5588Z" fill="%23E1E4E5"/></svg>');
   position: absolute;
   right: -2px;
   top: -2px;
@@ -16345,7 +16362,7 @@ span.select2-selection.select2-selection--single:focus {
 .img-box2 {
   position: relative;
   z-index: 2;
-  margin-left: -305px;
+  margin-left: -110px;
   height: 100%;
 }
 

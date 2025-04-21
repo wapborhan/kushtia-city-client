@@ -1,4 +1,4 @@
-import StockReport from "./StockReport";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -49,11 +49,10 @@ const About = () => {
                   অন্য কোথাও দিলে সম্ভব নয়।
                 </p>
               </div>
-              <a href="contact.html" className="th-btn style4">
-                Appointment Now<i className="far fa-arrow-right ms-2"></i>
-              </a>
+              <Link to="/blood" className="th-btn style4">
+                রক্তদাতা হন<i className="far fa-arrow-right ms-2"></i>
+              </Link>
             </div>
-            <StockReport />
           </div>
         </div>
       </div>

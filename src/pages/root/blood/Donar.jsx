@@ -1,43 +1,28 @@
 import { useEffect, useState } from "react";
 import DonarList from "./DonarList";
-import useDivision from "../../../hooks/data/useDivision";
-import useDistrict from "../../../hooks/data/useDistrict";
 import useUpazila from "../../../hooks/data/useUpazila";
 import Select from "../../../components/shared/Select";
+import useBloodGroup from "../../../hooks/data/useBloodGroup";
 
-const Search = () => {
-  const [divisions] = useDivision();
-  const [districts] = useDistrict();
+const Donar = () => {
   const [upazilas] = useUpazila();
-  //
-  const [division, setDivision] = useState();
-  const [district, setDistrict] = useState();
+  const [bloodGroups] = useBloodGroup();
   const [upazila, setUpazila] = useState();
   const [bloodGroup, setBloodGroup] = useState();
-  //
-  const [filteredDistricts, setFilteredDistricts] = useState([]);
   const [filteredUpazila, setFilteredUpazila] = useState();
 
   useEffect(() => {
-    const filteredDistricts = divisions
-      ? districts.filter((district) => district?.division_id === division?.id)
-      : [];
-
-    setFilteredDistricts(filteredDistricts);
-
-    const filteredUpazila = districts
-      ? upazilas.filter((upazila) => upazila?.district_id === district?.id)
-      : [];
+    const filteredUpazila = upazilas.filter(
+      (upazila) => upazila?.district_id === "25"
+    );
 
     setFilteredUpazila(filteredUpazila);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [division, district]);
+  }, []);
 
   const onSubmitData = (e) => {
     e.preventDefault();
     const searchData = {
-      division: division.name.toLowerCase(),
-      district: district.name.toLowerCase(),
       upazila: upazila.name.toLowerCase(),
       bloodGroup: bloodGroup.name,
     };
@@ -69,31 +54,32 @@ const Search = () => {
             </div>
           </div>
           <div className="donar">
-            <form onSubmit={onSubmitData}>
-              <div className="row grid-cols-5 gap-5">
-                <div className="upozila col-2">
-                  <Select
-                    name="Upozila"
-                    setData={setUpazila}
-                    data={filteredUpazila}
-                  />
-                </div>
-                <div className="group col-2">
-                  <Select
-                    name="Blood Group"
-                    setData={setBloodGroup}
-                    disableCon={true}
-                    data={[
-                      { id: "1", name: "A+" },
-                      { id: "2", name: "A-" },
-                    ]}
-                  />
-                </div>
-                <div className="button col-2">
-                  <button className=" p-2 w-full" type="submit">
-                    Search
-                  </button>
-                </div>
+            <form onSubmit={onSubmitData} className="p-4 row">
+              <div className="upozila col-5">
+                <Select
+                  name="Upozila"
+                  setData={setUpazila}
+                  data={filteredUpazila}
+                  disableCon={true}
+                />
+              </div>
+              <div className="groups col-5">
+                <Select
+                  name="Blood Group"
+                  setData={setBloodGroup}
+                  disableCon={true}
+                  data={bloodGroups}
+                  className="blood-group"
+                />
+              </div>
+              <div className="button col-2 w-full">
+                <button
+                  className="w-full border-0 px-5 rounded"
+                  style={{ padding: "0.8rem" }}
+                  type="submit"
+                >
+                  Search
+                </button>
               </div>
             </form>
             <DonarList />
@@ -104,4 +90,4 @@ const Search = () => {
   );
 };
 
-export default Search;
+export default Donar;

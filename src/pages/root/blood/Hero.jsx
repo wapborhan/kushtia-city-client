@@ -21,7 +21,6 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="flex gap-2 w-7/12 absolute top-1/2 left-2/3 -translate-y-1/2 -translate-x-2/3"></div>
       </div>
     </section>
   );
