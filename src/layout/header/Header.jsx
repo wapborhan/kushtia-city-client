@@ -45,7 +45,7 @@ const Header = () => {
                         </li>
                       );
                     })}
-                    <li className="menu-item-has-children">
+                    {/* <li className="menu-item-has-children">
                       <a href="#">আরও</a>
                       <ul className="sub-menu">
                         <li className="menu-item-has-children">
@@ -93,7 +93,7 @@ const Header = () => {
                           <a href="error.html">Error Page</a>
                         </li>
                       </ul>
-                    </li>
+                    </li> */}
                   </ul>
                 </nav>
                 <button

@@ -7223,8 +7223,8 @@ table.variations del {
 }
 
 .widget-area {
-  padding-top: 100px;
-  padding-bottom: 48px;
+  padding-top: 60px;
+  padding-bottom: 0px;
 }
 
 .sticky-footer {

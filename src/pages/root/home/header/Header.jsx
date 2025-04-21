@@ -16,7 +16,7 @@ const Header = () => {
                     <img
                       src="assets/img/logo-tertiary.png"
                       style={{ width: "250px" }}
-                      alt="KushtiaBD"
+                      alt="KushtiaCity"
                     />
                   </a>
                 </div>
@@ -26,8 +26,8 @@ const Header = () => {
                   <div className="header-logo d-block d-lg-none">
                     <a href="home-handyman.html">
                       <img
-                        src="assets/img/logo-tertiary-black.svg"
-                        alt="KushtiaBD"
+                        src="assets/img/logo-tertiary.png"
+                        alt="KushtiaCity"
                       />
                     </a>
                   </div>
@@ -45,7 +45,7 @@ const Header = () => {
                           </li>
                         );
                       })}
-
+                      {/* 
                       <li className="menu-item-has-children">
                         <a href="#">Pages</a>
                         <ul className="sub-menu">
@@ -94,7 +94,7 @@ const Header = () => {
                             <a href="error.html">Error Page</a>
                           </li>
                         </ul>
-                      </li>
+                      </li> */}
                     </ul>
                   </nav>
                   <button

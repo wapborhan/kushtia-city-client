@@ -43,24 +43,17 @@ const Footer = () => {
                         <img src="assets/img/logo.png" alt="Kushtia City" />
                       </a>
                     </div>
-                    <p className="about-text">
-                      Going forward, a new normal that has evolved from
-                      generation is on the runway heading towards a streamlined
-                      cloud solution.
-                    </p>
-                    <div className="th-social">
-                      <a href="https://www.facebook.com/">
-                        <i className="fab fa-facebook-f"></i>
-                      </a>
-                      <a href="https://www.twitter.com/">
-                        <i className="fab fa-twitter"></i>
-                      </a>
-                      <a href="https://www.instagram.com/">
-                        <i className="fab fa-instagram"></i>
-                      </a>
-                      <a href="https://www.linkedin.com/">
-                        <i className="fab fa-linkedin-in"></i>
-                      </a>
+
+                    <div className="th-app" style={{ color: "#fff" }}>
+                      আপনার মোবাইল ডিভাইসের জন্য কুষ্টিয়া সিটি অ্যাপটি ডাউনলোড
+                      করুন এবং আপনার এলাকার সেরা পরিষেবাগুলি পান।
+                      <Link to="/">
+                        <img
+                          src="https://cdn-shebaxyz.s3.ap-south-1.amazonaws.com/sheba_xyz/play-store.png"
+                          alt=""
+                          className="img-fluid mt-3"
+                        />
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -68,28 +61,64 @@ const Footer = () => {
               <div className="col-md-6 col-xl-auto">
                 <div className="widget widget_nav_menu footer-widget">
                   <h3 className="widget_title">
-                    <img src="assets/img/icon/footer_title5.svg" alt="icon" />
-                    Useful Links
+                    <img src="assets/img/icon/footer_title5.svg" alt="icon" />{" "}
+                    উপকারী লিংক
                   </h3>
                   <div className="menu-all-pages-container">
                     <ul className="menu">
                       <li>
-                        <a href="index.html">Home</a>
+                        <Link to="/blood">ব্লাড ব্যাঙ্ক</Link>
+                      </li>{" "}
+                      <li>
+                        <Link to="/doctor">ডাক্তার</Link>
+                      </li>{" "}
+                      <li>
+                        <Link to="/hospital">হাসপাতাল</Link>
+                      </li>{" "}
+                      <li>
+                        <Link to="/diagnostic">ডায়াগনস্টিক</Link>
+                      </li>{" "}
+                      <li>
+                        <Link to="/fire-services">ফায়ার সার্ভিস</Link>
+                      </li>{" "}
+                      <li>
+                        <Link to="/police-station">থানা-পুলিশ</Link>
+                      </li>{" "}
+                      <li>
+                        <Link to="/">বিদ্যুৎ অফিস</Link>
+                      </li>{" "}
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-6 col-xl-auto">
+                <div className="widget widget_nav_menu footer-widget">
+                  <h3 className="widget_title">
+                    <img src="assets/img/icon/footer_title5.svg" alt="icon" />{" "}
+                    সেবা সমূহ
+                  </h3>
+                  <div className="menu-all-pages-container">
+                    <ul className="menu">
+                      <li>
+                        <Link to="/uddokta">উদ্যোক্তা</Link>
+                      </li>{" "}
+                      <li>
+                        <Link to="/uddokta">ব্যাংক</Link>
+                      </li>{" "}
+                      <li>
+                        <Link to="/">হোটেল</Link>
+                      </li>{" "}
+                      <li>
+                        <Link to="/">রেস্টুরেন্ট</Link>
                       </li>
                       <li>
-                        <a href="about.html">About Us</a>
+                        <Link to="/">বাসা ভাড়া</Link>
+                      </li>{" "}
+                      <li>
+                        <Link to="/">গাড়ী ভাড়া</Link>
                       </li>
                       <li>
-                        <a href="about.html">Pricing Plan</a>
-                      </li>
-                      <li>
-                        <a href="service.html">Services</a>
-                      </li>
-                      <li>
-                        <a href="about.html">Testimonial</a>
-                      </li>
-                      <li>
-                        <a href="contact.html">Appointment</a>
+                        <Link to="/">সকল মিস্ত্রি</Link>
                       </li>
                     </ul>
                   </div>
@@ -99,50 +128,24 @@ const Footer = () => {
                 <div className="widget widget_nav_menu footer-widget">
                   <h3 className="widget_title">
                     <img src="assets/img/icon/footer_title5.svg" alt="icon" />{" "}
-                    Our Services
+                    সেবা সমূহ
                   </h3>
                   <div className="menu-all-pages-container">
                     <ul className="menu">
                       <li>
-                        <a href="service-details.html">Refrigerator</a>
-                      </li>
+                        <Link to="/">দোকান (স্থান) </Link>
+                      </li>{" "}
                       <li>
-                        <a href="service-details.html">Microwave</a>
-                      </li>
+                        <Link to="/">দর্শনীয় স্থান</Link>
+                      </li>{" "}
                       <li>
-                        <a href="service-details.html">Cookware Stove</a>
-                      </li>
+                        <Link to="/">কুরিয়ার সার্ভিস</Link>
+                      </li>{" "}
                       <li>
-                        <a href="service-details.html">Washing Machine</a>
-                      </li>
-                      <li>
-                        <a href="service-details.html">Juicer Mixer</a>
-                      </li>
-                      <li>
-                        <a href="service-details.html">Generator Install</a>
-                      </li>
+                        <Link to="/">শিক্ষা প্রতিষ্ঠান</Link>
+                      </li>{" "}
                     </ul>
                   </div>
-                </div>
-              </div>
-              <div className="col-md-6 col-xl-auto">
-                <div className="widget newsletter-widget footer-widget">
-                  <h3 className="widget_title">
-                    <img src="assets/img/icon/footer_title5.svg" alt="icon" />
-                    Newsletter
-                  </h3>
-                  <p className="footer-text">Get latest updates and offers.</p>
-                  <form className="newsletter-form">
-                    <input
-                      className="form-control"
-                      type="email"
-                      placeholder="Enter email address"
-                      required=""
-                    />
-                    <button type="submit" className="th-btn style3">
-                      Subscribe<i className="far fa-arrow-right ms-2"></i>
-                    </button>
-                  </form>
                 </div>
               </div>
             </div>
@@ -153,9 +156,9 @@ const Footer = () => {
             <div className="row gy-2 align-items-center">
               <div className="col-md-6">
                 <p className="copyright-text">
-                  Copyright <i className="fal fa-copyright"></i>{" "}
+                  কপিরাইট <i className="fal fa-copyright"></i>{" "}
                   {new Date().getFullYear()}
-                  <Link to="/"> Kushtia City </Link>. All Rights Reserved.
+                  <Link to="/"> Kushtia City</Link>, সর্বস্বত্ব সংরক্ষিত।
                 </p>
               </div>
               <div className="col-md-6 text-center text-md-end">

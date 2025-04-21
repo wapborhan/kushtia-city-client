@@ -145,15 +145,6 @@ const Hero = () => {
                         Our All Services
                         <i className="fas fa-arrow-right ms-2"></i>
                       </a>
-                      <a
-                        href="https://www.youtube.com/watch?v=_sI_Ps7JSEk"
-                        className="popup-video video-btn"
-                      >
-                        <div className="play-btn">
-                          <i className="fas fa-play"></i>
-                        </div>
-                        Play Video
-                      </a>
                     </div>
                   </div>
                 </div>
@@ -211,15 +202,6 @@ const Hero = () => {
                       >
                         Our All Services
                         <i className="fas fa-arrow-right ms-2"></i>
-                      </a>
-                      <a
-                        href="https://www.youtube.com/watch?v=_sI_Ps7JSEk"
-                        className="popup-video video-btn"
-                      >
-                        <div className="play-btn">
-                          <i className="fas fa-play"></i>
-                        </div>
-                        Play Video
                       </a>
                     </div>
                   </div>

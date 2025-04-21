@@ -1,4 +1,4 @@
-import DonarCrad from "../../../components/shared/DonarCrad";
+import DonarCard from "../../../components/shared/DonarCard";
 
 const DonarList = () => {
   const data = [
@@ -33,7 +33,7 @@ const DonarList = () => {
   ];
 
   const cardData = data.map((member, idx) => {
-    return <DonarCrad data={member} key={idx} />;
+    return <DonarCard data={member} key={idx} />;
   });
 
   return (

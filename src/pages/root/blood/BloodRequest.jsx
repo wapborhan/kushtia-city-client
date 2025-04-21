@@ -34,7 +34,7 @@ const BloodRequest = () => {
   ];
 
   const cardData = data.map((member, idx) => {
-    return <BloodReqCard data={member} key={idx} />;
+    return <BloodReqCard data={member} key={idx} column={3} />;
   });
 
   return (

@@ -4,6 +4,8 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Link } from "react-router-dom";
+import DonarCard from "../../../../components/shared/DonarCard";
+import BloodReqCard from "../../../../components/shared/BloodReqCard";
 
 const Donar = () => {
   return (
@@ -21,15 +23,15 @@ const Donar = () => {
               <span className="sub-title2">
                 <span className="line"></span>
                 <img src="assets/img/theme-img/title_icon5.svg" alt="shape" />
-                রক্তের ডোনার
+                রক্তের প্রয়োজন
               </span>
-              <h2 className="sec-title">আমাদের সুপার হিরো</h2>
+              <h2 className="sec-title">এখন পর্যন্ত রক্তের অনুরোধঃ ১৪ জন</h2>
             </div>
           </div>
           <div className="col-lg-auto">
             <div className="sec-btn mt-n3 mt-lg-0">
               <Link to="/blood" className="th-btn style4 rounded-12">
-                সকল ডোনার<i className="far fa-arrow-right ms-2"></i>
+                সকল রক্তের অনুরোধঃ<i className="far fa-arrow-right ms-2"></i>
               </Link>
             </div>
           </div>
@@ -39,8 +41,8 @@ const Donar = () => {
           <Swiper
             modules={[Navigation, Pagination, Autoplay]}
             spaceBetween={30}
-            slidesPerView={3}
-            // loop={true}
+            slidesPerView={4}
+            loop={true}
             // autoplay={{
             //   delay: 5000,
             //   disableOnInteraction: false,
@@ -59,40 +61,22 @@ const Donar = () => {
               0: { slidesPerView: 1 },
               576: { slidesPerView: 1 },
               768: { slidesPerView: 2 },
-              992: { slidesPerView: 2 },
-              1200: { slidesPerView: 3 },
+              992: { slidesPerView: 3 },
+              1200: { slidesPerView: 4 },
             }}
             className="swiper th-slider has-shadow"
           >
             {/* Slides */}
             {[
-              { name: "John Simon", img: "team_5_1.png" },
-              { name: "Michel Jack", img: "team_5_2.png" },
-              { name: "Mackolin Smith", img: "team_5_3.png" },
-              { name: "Ralph Edwards", img: "team_5_1.png" },
-              { name: "Guy Hawkins", img: "team_5_2.png" },
-              { name: "Jacob Jones", img: "team_5_3.png" },
+              { name: "John Simon", image: "team_5_1.png" },
+              { name: "Michel Jack", image: "team_5_2.png" },
+              { name: "Mackolin Smith", image: "team_5_3.png" },
+              { name: "Ralph Edwards", image: "team_5_1.png" },
+              { name: "Guy Hawkins", image: "team_5_2.png" },
+              { name: "Jacob Jones", image: "team_5_3.png" },
             ].map((member, idx) => (
               <SwiperSlide key={idx}>
-                <div className="th-team team-element">
-                  <div className="box-img">
-                    {/* <img src={`assets/img/team/${member.img}`} alt="Team" /> */}
-                    <img
-                      src="http://service.scouts.gov.bd/profile_img/1548126508-11.jpg"
-                      alt="Team"
-                    />
-                  </div>
-                  <a href="team-details.html" className="icon-btn arrow-icon">
-                    <i className="far fa-arrow-up-right"></i>
-                  </a>
-                  <div className="box-content">
-                    <h3 className="box-title">
-                      <a href="team-details.html">{member.name}</a>
-                    </h3>
-                    <span className="box-desig">ভেরামারা কুষ্টিয়া</span>
-                    <span className="icon-btn whatsapp">B+</span>
-                  </div>
-                </div>
+                <BloodReqCard data={member} column={12} />
               </SwiperSlide>
             ))}
           </Swiper>

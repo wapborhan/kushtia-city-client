@@ -6,7 +6,7 @@ export const navData = [
   },
   {
     id: 2,
-    name: "রক্ত",
+    name: "ব্লাড ব্যাঙ্ক",
     link: "/blood",
   },
 
