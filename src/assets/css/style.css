@@ -902,15 +902,16 @@
 
 .home-electrician {
   --body-bg: #fff;
-  --theme-color: #fa2d39;
+  --theme-color: #fa2d39; 
   --th-border-color: #e1e4e5;
+
 }
 
 body,
 html {
   scroll-behavior: auto !important;
   scrollbar-width: thin;
-  scrollbar-color: #fa2d39 #101840;
+  scrollbar-color: #fa2d39 !important;
 }
 
 body {
@@ -923,6 +924,20 @@ body {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
 }
+
+.main-sedebar ::-webkit-scrollbar,
+body ::-webkit-scrollbar ,
+html ::-webkit-scrollbar ,
+.home-electrician ::-webkit-scrollbar {
+  width: .3em;
+}
+.main-sedebar ::-webkit-scrollbar-thumb,
+body ::-webkit-scrollbar-thumb, 
+html ::-webkit-scrollbar-thumb,
+.home-electrician ::-webkit-scrollbar-thumb{
+  background:  #fa2d39;
+  border-radius: 3px;
+} 
 
 iframe {
   border: 0;
@@ -19527,4 +19542,13 @@ z-index: 3;
 
 .gap-5 {
   gap: 24px;
+}
+
+.ps-open {
+  background-color: #fa2d39;
+  color: #000;  
+  font-weight: 700;
+}
+.ps-menu-button{
+  height: 40px !important;
 }

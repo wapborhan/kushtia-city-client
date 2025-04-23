@@ -70,7 +70,7 @@ const SignIn = () => {
                     type="email"
                     name="email"
                     autoFocus
-                    defaultValue="borhanuddin979@gmail.com"
+                    defaultValue="test@gmail.com"
                     className="form-control"
                     placeholder="Email Address"
                   />

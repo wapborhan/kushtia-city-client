@@ -44,7 +44,7 @@ const TopBar = () => {
                 </li>
                 <li>
                   <i className="fas fa-user"></i>
-                  <Link to={user ? "/dashboard/profile" : "/signin"}>
+                  <Link to={user ? "/dashboard" : "/signin"}>
                     {user ? "ড্যাশবোর্ড" : "সাইন ইন"}
                   </Link>
                 </li>

@@ -1,14 +1,27 @@
 const DashFooter = () => {
   return (
-    <div className="credit bottom-0  bg-slate-900 text-center text-white py-3 px-10 flex justify-between gap-5">
-      <div>Copyright © {new Date().getFullYear()} . All Rights Reserved.</div>
-      <div>
-        Developed by{" "}
-        <a href="http://www.srdreamlab.com" target="__BLANK">
-          SR Dream Lab
-        </a>
-      </div>
-    </div>
+    <>
+      <footer className="mt-1">
+        <div
+          className="credit bottom-0 w-100 text-center text-white py-3 px-5 d-flex justify-content-between gap-5"
+          style={{ background: "var(--theme-color)" }}
+        >
+          <div>
+            Copyright © {new Date().getFullYear()} . All Rights Reserved.
+          </div>
+          <div>
+            Developed by{" "}
+            <a
+              href="http://www.srdreamlab.com"
+              target="__BLANK"
+              className="text-white"
+            >
+              SR Dream Lab
+            </a>
+          </div>
+        </div>
+      </footer>
+    </>
   );
 };
 

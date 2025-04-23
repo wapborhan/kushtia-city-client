@@ -5,9 +5,7 @@ const Details = () => {
     <>
       <div className="border-2 border-primary rounded-lg">
         <div className="bg-primary py-2 px-7 flex justify-between items-center">
-          <h2 className="text-2xl text-white font-bold">
-            Profile Details
-          </h2>
+          <h2 className="text-2xl text-white font-bold">Profile Details</h2>
           <Link
             to="/"
             className="py-2 px-4 bg-secondary text-white rounded-md "
