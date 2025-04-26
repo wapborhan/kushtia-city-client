@@ -1,13 +1,13 @@
 const useBloodGroup = () => {
   const bloodGroups = [
-    { id: 1, name: "A+" },
-    { id: 2, name: "A-" },
-    { id: 3, name: "B+" },
-    { id: 4, name: "B-" },
-    { id: 5, name: "AB+" },
-    { id: 6, name: "AB-" },
-    { id: 7, name: "O+" },
-    { id: 8, name: "O-" },
+    { id: 1, value: "A+", label: "A+" },
+    { id: 2, value: "A-", label: "A-" },
+    { id: 3, value: "B+", label: "B+" },
+    { id: 4, value: "B-", label: "B-" },
+    { id: 5, value: "AB+", label: "AB+" },
+    { id: 6, value: "AB-", label: "AB-" },
+    { id: 7, value: "O+", label: "O+" },
+    { id: 8, value: "O-", label: "O-" },
   ];
 
   return [bloodGroups];

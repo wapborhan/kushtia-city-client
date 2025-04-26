@@ -7,13 +7,10 @@ import About from "../pages/root/blood/About";
 import SignIn from "../layout/signin/SignIn";
 import SignUp from "../layout/signup/SignUp";
 import Profile from "../pages/dash/profile/Profile";
-import QuestAns from "../pages/root/quest-ans/QuestAns";
-import Answare from "../pages/root/quest-ans/Answare";
-import Services from "../pages/root/services/Services";
 import ServicesDetails from "../pages/root/services/details/ServicesDetails";
-import Test from "../pages/test";
 import ErrorElement from "../layout/ErrorElement";
 import CoomingSoon from "../components/CoomingSoon";
+import DonarAdd from "../pages/dash/blood/DonarAdd";
 
 const router = createBrowserRouter([
   {
@@ -76,6 +73,23 @@ const router = createBrowserRouter([
         path: "profile",
         element: <Profile />,
       },
+      {
+        path: "blood",
+        children: [
+          {
+            path: "donar/add",
+            element: <DonarAdd />,
+          },
+          {
+            path: "donar/list",
+            element: <CoomingSoon />,
+          },
+          {
+            path: "request/list",
+            element: <CoomingSoon />,
+          },
+        ],
+      },
     ],
   },
   {
@@ -85,10 +99,6 @@ const router = createBrowserRouter([
   {
     path: "/signup",
     element: <SignUp />,
-  },
-  {
-    path: "/test",
-    element: <Test />,
   },
 ]);
 export default router;

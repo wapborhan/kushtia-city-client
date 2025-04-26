@@ -2,6 +2,8 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { menuData } from "./menuData";
 import { Menu, MenuItem, Sidebar, SubMenu } from "react-pro-sidebar";
+import { TbCircleDashed } from "react-icons/tb";
+import Icon from "../../components/shared/Icon";
 // import Logo from "../assets/images/logo/logo-squire.png";
 
 const themes = {
@@ -157,7 +159,7 @@ const DashSidebar = (props) => {
                 <SubMenu
                   key={index}
                   label={item.label}
-                  icon={<i className={`pi ` + item.icon} />}
+                  icon={<Icon iconName={item.icon} />}
                   defaultOpen={index === openSubMenu}
                   onToggle={() => handleSubMenuClick(index)}
                   style={{ borderBottom: "1px solid #e5e5e5" }}
@@ -166,7 +168,7 @@ const DashSidebar = (props) => {
                     <MenuItem
                       key={subIndex}
                       component={<NavLink to={subItem.path} />}
-                      icon={<i className="pi pi-circle"></i>}
+                      icon={<TbCircleDashed />}
                       className="overflow-hidden"
                       style={{
                         overflow: "hidden",
@@ -183,7 +185,7 @@ const DashSidebar = (props) => {
                 <MenuItem
                   key={index}
                   component={<NavLink to={item.path} />}
-                  icon={<i className={`pi ` + item.icon} />}
+                  icon={<Icon iconName={item.icon} />}
                   style={{ borderBottom: "1px solid #e5e5e5" }}
                 >
                   {item.label}
