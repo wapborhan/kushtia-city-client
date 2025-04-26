@@ -11,8 +11,8 @@ const Dash = () => {
   const [toggled, setToggled] = useState(false);
   const { loading } = useAuth();
   return (
-    <div id="wrapper" className="d-flex">
-      <div className="sidebarre">
+    <div id="wrapper" className="flex">
+      <div className="sidebar">
         <DashSidebar
           collapsed={collapsed}
           setBroken={setBroken}
@@ -22,11 +22,11 @@ const Dash = () => {
         />
       </div>
       <div
-        id="content-wrappers"
-        className="w-100"
+        id="content-wrapper"
+        className="w-full"
         style={{ height: "100dvh", overflow: "hidden" }}
       >
-        <div id="contents" style={{ height: "100dvh", overflowY: "scroll" }}>
+        <div id="content" style={{ height: "100dvh", overflowY: "scroll" }}>
           <DashHeader
             collapsed={collapsed}
             setBroken={setBroken}

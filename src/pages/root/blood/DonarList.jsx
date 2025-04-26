@@ -38,7 +38,7 @@ const DonarList = () => {
 
   return (
     <div className="donar-list mt-10" style={{ marginTop: "40px" }}>
-      <div className="row">{cardData}</div>
+      <div className="grid grid-cols-4 gap-5">{cardData}</div>
     </div>
   );
 };

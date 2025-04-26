@@ -17,7 +17,7 @@ const TopBar = () => {
   return (
     <div className="header-top">
       <div className="container">
-        <div className="row justify-content-center justify-content-lg-between align-items-center gy-2">
+        <div className="flex justify-centers justify-between items-center gy-2">
           <div className="col-auto d-none d-lg-block">
             <div className="header-links">
               <ul>

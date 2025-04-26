@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import { RouterProvider } from "react-router-dom";
 import router from "./routes/routes.jsx";
 import "./assets/css/style.css";
-import "./assets/css/app.min.css";
+// import "./assets/css/app.min.css";
 import "./assets/css/fontawesome.min.css";
 import "swiper/css";
 import "swiper/css/effect-fade";

@@ -63,7 +63,7 @@ const ServiceList = () => {
                 <i className="far fa-arrow-up-right"></i>
               </a>
               <div className="box-content">
-                <div className="box-icon">
+                <div className="box-icon flex justify-center items-center">
                   <img
                     src={`assets/img/icon/service_block_${item}.svg`}
                     alt="Icon"

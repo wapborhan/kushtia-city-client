@@ -1,5 +1,5 @@
 import "../assets/css/fontawesome.min.css";
-import "../assets/css/app.min.css";
+
 import "../assets/css/style.css";
 import "swiper/css";
 import { Swiper, SwiperSlide } from "swiper/react";

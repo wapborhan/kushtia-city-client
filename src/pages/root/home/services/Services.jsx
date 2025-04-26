@@ -12,10 +12,10 @@ const Services = () => {
       }}
     >
       <div className="container">
-        <div className="row justify-content-between align-items-center">
+        <div className="flex justify-between items-center">
           <div className="col-md-7 col-xl-6 text-center text-md-start">
             <div className="title-area">
-              <span className="sub-title2">
+              <span className="sub-title2 flex">
                 <span className="line"></span>
                 <img
                   src="assets/img/theme-img/title_icon5_white.svg"

@@ -44,10 +44,10 @@ const BloodRequest = () => {
           <img src="assets/img/shape/lines_1.png" alt="shape" />
         </div>
         <div className="container">
-          <div className="row justify-content-center">
+          <div className="flex justify-content-center">
             <div className="col-xl-8 col-md-10">
               <div className="title-area text-center">
-                <span className="sub-title">
+                <span className="sub-title flex">
                   <img src="assets/img/theme-img/title_icon.svg" alt="Icon" />
                   রক্তের প্রয়োজন
                 </span>
@@ -61,7 +61,7 @@ const BloodRequest = () => {
             </div>
           </div>
           <div className="donar">
-            <div className="row">{cardData}</div>
+            <div className="grid grid-cols-4 gap-6">{cardData}</div>
           </div>
         </div>
       </section>

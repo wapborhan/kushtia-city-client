@@ -3,14 +3,12 @@ import useAuth from "../../../hooks/useAuth";
 const Profile = () => {
   const { user } = useAuth();
 
-  console.log(user);
-
   return (
     <>
       <section className="space">
         <div className="container">
-          <div className="row gy-40">
-            <div className="col-xl-4 col-md-6 position-relative">
+          <div className="grid grid-cols-12 gy-40">
+            <div className="col-span-4 col-md-6 position-relative">
               <div className="th-team team-card active">
                 <div className="box-img">
                   <img src={"/assets/img/team/team_1_1.jpg"} alt="Team" />
@@ -61,7 +59,7 @@ const Profile = () => {
                 </div>
               </div>
             </div>
-            <div className="col-xl-8 col-md-6">
+            <div className="col-span-8 col-md-6">
               <div className="about-card">
                 <h2 className="mb-20 pb-1 sec-title">About Me</h2>
                 <p>

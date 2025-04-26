@@ -3,7 +3,7 @@ const DashFooter = () => {
     <>
       <footer className="mt-1">
         <div
-          className="credit bottom-0 w-100 text-center text-white py-3 px-5 d-flex justify-content-between gap-5"
+          className="credit bottom-0 w-full text-center text-white py-10 px-40 flex justify-between gap-5"
           style={{ background: "var(--theme-color)" }}
         >
           <div>

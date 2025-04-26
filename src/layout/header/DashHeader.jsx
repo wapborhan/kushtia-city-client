@@ -1,6 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
 import { FaAlignLeft, FaBars } from "react-icons/fa";
+import { navData } from "./headData";
 
 const DashHeader = (props) => {
   const {
@@ -31,7 +32,7 @@ const DashHeader = (props) => {
   return (
     <nav
       id="topbar"
-      className="topbar navbar-expand navbar-light bg-white  mb-4 static-top shadow d-flex justify-content-between px-4 py-2 items-center"
+      className="topbar navbar-expand navbar-light bg-white  mb-4 static-top shadow flex justify-between px-20 py-10 items-center"
     >
       {broken ? (
         <>
@@ -41,16 +42,32 @@ const DashHeader = (props) => {
         </>
       ) : (
         <div
-          className="sidebars-button text-dark cursor-pointer"
+          className="sidebars-button text-dark cursor-pointer d-flex justify-content-center align-items-center"
           onClick={() => setCollapsed(!collapsed)}
         >
           {collapsed ? <FaAlignLeft /> : <FaBars />}
         </div>
       )}
 
-      <h2 id="nameTitle" className="text-center text-dark font-bold">
-        {/* Rubel Auto */}Test
-      </h2>
+      <div
+        id="nameTitle"
+        className="text-center text-dark font-bold flex gap-3 align-items-center"
+      >
+        <Link to="/" className="text-dark font-bold text-lg">
+          মূলপাতা
+        </Link>
+        {navData.map((item) => {
+          return (
+            <Link
+              key={item.id}
+              to={item.link}
+              className="text-dark font-bold text-lg"
+            >
+              {item.name}
+            </Link>
+          );
+        })}
+      </div>
       <div className="account btn-circle w-12 flex justify-center items-center h-12 ">
         <Link
           to="/profile/view"

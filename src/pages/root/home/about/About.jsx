@@ -4,8 +4,8 @@ const About = () => {
   return (
     <div className="overflow-hidden space" id="about-sec">
       <div className="container">
-        <div className="row flex-row-reverse">
-          <div className="col-xl-6 mb-35 mb-xl-0">
+        <div className="grid grid-cols-5 gap-10 grid-col-reverse">
+          <div className="col-span-2 mb-35 mb-xl-0 order-2">
             <div className="img-box5">
               <div className="img1">
                 <img src="assets/img/normal/about_5.png" alt="About" />
@@ -23,15 +23,18 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div className="col-xl-6 text-center text-xl-start">
+          <div className="col-span-3 text-left">
             <div className="pe-xxl-5">
               <div className="title-area mb-37">
-                <span className="sub-title2">
+                <span className="sub-title2 flex">
                   <img src="assets/img/theme-img/title_icon5.svg" alt="shape" />
                   এক নজরে
                 </span>
                 <h2 className="sec-title mb-5">কুষ্টিয়া জেলা সম্পর্কে</h2>
-                <p className="sec-text lh-lg" style={{ textAlign: "justify" }}>
+                <p
+                  className="sec-text lh-lg !leading-8"
+                  style={{ textAlign: "justify" }}
+                >
                   সাহিত্য ও সংস্কৃতির রাজধানী হিসেবে পরিচিত কুষ্টিয়া জেলার উত্তর
                   পশ্চিম এবং উত্তরে পদ্মা নদীর অপর তীরে রাজশাহী, নাটোর ও পাবনা
                   জেলা, দক্ষিণে ঝিনাইদহ জেলা, পশ্চিমে মেহেরপুর ও চুয়াডাঙ্গা জেলা

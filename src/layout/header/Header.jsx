@@ -18,7 +18,7 @@ const Header = () => {
       <div className="sticky-wrapper">
         <div className="container">
           <div className="menu-area">
-            <div className="row align-items-center justify-content-between">
+            <div className="flex items-center justify-between">
               <div className="col-auto">
                 <div className="header-logo">
                   <Link to="/">
@@ -98,7 +98,7 @@ const Header = () => {
                 </nav>
                 <button
                   type="button"
-                  className="th-menu-toggle d-block d-lg-none"
+                  className="th-menu-toggle block lg:!hidden"
                 >
                   <i className="far fa-bars"></i>
                 </button>

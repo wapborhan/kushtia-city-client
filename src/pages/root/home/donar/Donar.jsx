@@ -17,15 +17,14 @@ const Donar = () => {
       }}
     >
       <div className="container">
-        <div className="row justify-content-between align-items-center">
+        <div className="flex justify-between items-center">
           <div className="col-xl-6 col-lg-8">
-            <div className="title-area text-center text-lg-start">
-              <span className="sub-title2">
+            <div className="title-area text-center">
+              <span className="sub-title2 flex">
                 <span className="line"></span>
                 <img src="assets/img/theme-img/title_icon5.svg" alt="shape" />
                 রক্তের প্রয়োজন
               </span>
-              <h2 className="sec-title">এখন পর্যন্ত রক্তের অনুরোধঃ ১৪ জন</h2>
             </div>
           </div>
           <div className="col-lg-auto">
@@ -36,7 +35,9 @@ const Donar = () => {
             </div>
           </div>
         </div>
-
+        <h2 className="sec-title text-center">
+          এখন পর্যন্ত রক্তের অনুরোধঃ ১৪ জন
+        </h2>
         <div className="slider-wrap text-center">
           <Swiper
             modules={[Navigation, Pagination, Autoplay]}

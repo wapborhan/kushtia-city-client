@@ -7,8 +7,8 @@ const About = () => {
         <img src="assets/img/shape/lines_1.png" alt="shape" />
       </div>
       <div className="container">
-        <div className="row">
-          <div className="col-xl-5">
+        <div className="grid grid-cols-12 gap-10">
+          <div className="col-xl-5 col-span-5">
             <div className="img-box2">
               <div className="img1">
                 <img src="assets/img/normal/why_1.jpg" alt="Why" />
@@ -21,10 +21,10 @@ const About = () => {
               </a>
             </div>
           </div>
-          <div className="col-xl-7 text-center text-xl-start align-self-center space-extra">
+          <div className="col-xl-7 col-span-7 text-left space-extra">
             <div className="ps-xl-5 pb-30 pb-lg-0">
               <div className="title-area">
-                <span className="sub-title">
+                <span className="sub-title flex">
                   <img src="assets/img/theme-img/title_icon.svg" alt="shape" />
                   ডোনার
                 </span>
@@ -50,7 +50,7 @@ const About = () => {
                 </p>
               </div>
               <Link to="/blood" className="th-btn style4">
-                রক্তদাতা হন<i className="far fa-arrow-right ms-2"></i>
+                রক্তদাতা হন<i className="far fa-arrow-right ms-3"></i>
               </Link>
             </div>
           </div>

@@ -9,7 +9,7 @@ const Header = () => {
       <div className="sticky-wrapper">
         <div className="container">
           <div className="menu-area">
-            <div className="row align-items-start justify-content-between">
+            <div className="flex items-start justify-between">
               <div className="col-auto d-none d-lg-block">
                 <div className="header-logo">
                   <a href="home-handyman.html">
@@ -23,7 +23,7 @@ const Header = () => {
               </div>
               <div className="col">
                 <div className="menu-wrap">
-                  <div className="header-logo d-block d-lg-none">
+                  <div className="header-logo hidden">
                     <a href="home-handyman.html">
                       <img
                         src="assets/img/logo-tertiary.png"
@@ -31,7 +31,7 @@ const Header = () => {
                       />
                     </a>
                   </div>
-                  <nav className="main-menu d-none d-lg-inline-block">
+                  <nav className="main-menu hidden lg:inline-block">
                     <ul>
                       <li>
                         <NavLink to="/">নীড় পাতা</NavLink>
@@ -99,13 +99,13 @@ const Header = () => {
                   </nav>
                   <button
                     type="button"
-                    className="simple-icon searchBoxToggler d-none d-lg-inline-block"
+                    className="simple-icon searchBoxToggler hidden lg:inline-block"
                   >
                     <i className="far fa-search"></i>
                   </button>
                   <button
                     type="button"
-                    className="th-menu-toggle d-block d-lg-none"
+                    className="th-menu-toggle block lg:!hidden"
                   >
                     <i className="far fa-bars"></i>
                   </button>

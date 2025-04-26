@@ -34,7 +34,7 @@ const Footer = () => {
       >
         <div className="widget-area">
           <div className="container">
-            <div className="row justify-content-between">
+            <div className="flex justify-between">
               <div className="col-md-6 col-xl-auto">
                 <div className="widget footer-widget">
                   <div className="th-widget-about">
@@ -153,7 +153,7 @@ const Footer = () => {
         </div>
         <div className="copyright-wrap">
           <div className="container">
-            <div className="row gy-2 align-items-center">
+            <div className="flex gy-2 items-center justify-between">
               <div className="col-md-6">
                 <p className="copyright-text">
                   কপিরাইট <i className="fal fa-copyright"></i>{" "}
@@ -161,7 +161,7 @@ const Footer = () => {
                   <Link to="/"> Kushtia City</Link>, সর্বস্বত্ব সংরক্ষিত।
                 </p>
               </div>
-              <div className="col-md-6 text-center text-md-end">
+              <div className="col-md-6 text-center text-white text-md-end">
                 Developed by{" "}
                 <a href="http://www.srdreamlab.com" target="__BLANK">
                   SR Dream Lab

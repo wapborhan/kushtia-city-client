@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 @-webkit-keyframes swiperFade {
   0% {
     opacity: 1;
@@ -902,16 +904,29 @@
 
 .home-electrician {
   --body-bg: #fff;
-  --theme-color: #fa2d39; 
+  --theme-color: #fa2d39;
   --th-border-color: #e1e4e5;
+}
 
+.main-sidebar ::-webkit-scrollbar {
+  width: 0.3em;
+}
+
+.main-sidebar ::-webkit-scrollbar-thumb {
+  background: #fa2d39;
+  border-radius: 3px;
+}
+.main-sidebar {
+  scroll-behavior: auto !important;
+  scrollbar-color: #fa2d39 transparent !important;
+  scrollbar-width: thin !important;
 }
 
 body,
 html {
   scroll-behavior: auto !important;
-  scrollbar-width: thin;
-  scrollbar-color: #fa2d39 !important;
+  scrollbar-color: #fa2d39 #fff !important;
+  scrollbar-width: thin !important;
 }
 
 body {
@@ -924,20 +939,6 @@ body {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
 }
-
-.main-sedebar ::-webkit-scrollbar,
-body ::-webkit-scrollbar ,
-html ::-webkit-scrollbar ,
-.home-electrician ::-webkit-scrollbar {
-  width: .3em;
-}
-.main-sedebar ::-webkit-scrollbar-thumb,
-body ::-webkit-scrollbar-thumb, 
-html ::-webkit-scrollbar-thumb,
-.home-electrician ::-webkit-scrollbar-thumb{
-  background:  #fa2d39;
-  border-radius: 3px;
-} 
 
 iframe {
   border: 0;
@@ -1208,6 +1209,93 @@ h6 {
   h1 {
     font-size: 32px;
   }
+}
+
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 576px) {
+  .container,
+  .container-sm {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container,
+  .container-md,
+  .container-sm {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1320px;
+  }
+}
+
+.navbar,
+.navbar > .container,
+.navbar > .container-fluid,
+.navbar > .container-lg,
+.navbar > .container-md,
+.navbar > .container-sm,
+.navbar > .container-xl,
+.navbar > .container-xxl {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.navbar > .container,
+.navbar > .container-fluid,
+.navbar > .container-lg,
+.navbar > .container-md,
+.navbar > .container-sm,
+.navbar > .container-xl,
+.navbar > .container-xxl {
+  -webkit-flex-wrap: inherit;
+  -ms-flex-wrap: inherit;
+  flex-wrap: inherit;
 }
 
 p.has-drop-cap {
@@ -4637,6 +4725,8 @@ a.text-theme:hover {
   line-height: 1em;
   padding-bottom: 20px;
   margin: -0.12em 0 32px;
+  display: flex;
+  gap: 10px;
 }
 
 .widget_title:after,
@@ -14569,10 +14659,10 @@ span.select2-selection.select2-selection--single:focus {
 }
 
 .th-team.team-element .icons {
-position: absolute;
-top: 0;
-right: 0;
-z-index: 3;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 3;
 }
 
 .team-element .arrow-icon,
@@ -14591,13 +14681,14 @@ z-index: 3;
   z-index: 3;
 }
 
-.team-element .arrow-icon:hover ,.team-element .arrow-icons:hover{
+.team-element .arrow-icon:hover,
+.team-element .arrow-icons:hover {
   background-color: var(--theme-color);
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-.team-element .arrow-icons:hover{
+.team-element .arrow-icons:hover {
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
@@ -19546,9 +19637,9 @@ z-index: 3;
 
 .ps-open {
   background-color: #fa2d39;
-  color: #000;  
+  color: #000;
   font-weight: 700;
 }
-.ps-menu-button{
+.ps-menu-button {
   height: 40px !important;
 }

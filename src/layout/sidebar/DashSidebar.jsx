@@ -114,7 +114,7 @@ const DashSidebar = (props) => {
   };
 
   return (
-    <div className="main-sedebar" style={{ display: "flex", height: "100%" }}>
+    <div className="main-sidebar" style={{ display: "flex", height: "100%" }}>
       <Sidebar
         collapsed={collapsed}
         // className="h-[100dvh]"
@@ -132,15 +132,13 @@ const DashSidebar = (props) => {
         }}
       >
         <div
-          className={
-            collapsed
-              ? "w-100 p-2 mx-auto text-center space-y-4 border-b-2"
-              : "w-100 p-5 mx-auto text-center space-y-4 border-b-2"
-          }
+          className={`w-full ${
+            collapsed ? "p-2" : "p-6"
+          } mx-auto text-center space-y-4 border-b-2`}
           style={{ border: "1px solid #e5e5e5" }}
         >
-          <div className={collapsed ? "w-13" : "w-28 mx-auto rounded-full"}>
-            {/* <img src={Logo} /> */}tt
+          <div className={collapsed ? "w-full" : "w-full mx-auto rounded-full"}>
+            <img src="/assets/img/logo.png" />
           </div>
         </div>
         <Menu
@@ -149,7 +147,7 @@ const DashSidebar = (props) => {
           style={{
             position: "sticky",
             top: "0",
-            height: "82dvh",
+            height: "78dvh",
             overflowY: "scroll",
           }}
         >

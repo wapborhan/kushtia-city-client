@@ -2,7 +2,7 @@ const DonarCard = ({ data }) => {
   const { image, name, location, bloodGroup, connect } = data;
 
   return (
-    <div className="th-team team-element col-lg-3 col-md-6 col-12 text-center mt-4">
+    <div className="th-team team-element  text-center mt-4">
       <div className="box-img">
         <img src={image} alt="Team" />
       </div>
